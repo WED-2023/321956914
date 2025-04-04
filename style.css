@@ -1,12 +1,12 @@
 #menu {
 	position: fixed;
 	width: 100%;
-	background: #2c3e50;
+	background: #7f8c8d;
 	top: 0;
 	padding: 15px 0;
 	z-index: 1000;
 	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-	border-bottom: 2px solid #34495e;
+	border-bottom: 2px solid #ffffff;
 	text-align: center;
 }
 
@@ -34,17 +34,25 @@
 }
 
 #menu a:hover {
-	background-color: #e74c3c;
+	background-color: #6d6a6a;
 	color: white;
 }
 
 #menu a:active {
-	background-color: #c0392b;
+	background-color: #6d6a6a;
 }
 
 body {
-    background-color: #ecf3f6; 
+    background: linear-gradient(to right, #8e44ad, #3498db); /* Gradient */
+    background-size: cover;
+    background-attachment: fixed;
+    color: #7f8c8d;
+    font-family: 'Arial', sans-serif;
+    background-image: url('utils/rockybackground.webp'); /* Optional: subtle pattern */
+    background-repeat: repeat;
 }
+
+
 
 .photographs {
 	display: grid;
@@ -75,15 +83,34 @@ body {
 	font-size: 36px;
 	font-family: 'Arial', sans-serif;
 	margin-bottom: 20px;
-	color: #436c95;
+	color: #7f8c8d;
 	font-weight: bold;
+	position: relative;
+}
+
+.section h2::before,
+.section h2::after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	width: 40%;
+	height: 2px;
+	background-color: #7f8c8d;
+}
+
+.section h2::before {
+	left: 0;
+}
+
+.section h2::after {
+	right: 0;
 }
 
 .section p, .section img {
 	text-align: left;
 	font-size: 20px;
 	line-height: 1.6;
-	color: #34495e;
+	color: #7f8c8d;
 }
 
 #about {
@@ -145,7 +172,7 @@ body {
   
 .contact-form button {
 	padding: 12px 20px;
-	background-color: #0066cc;
+	background-color: #b5bec7;
 	color: white;
 	font-size: 1rem;
 	border: none;
