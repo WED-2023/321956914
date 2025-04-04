@@ -50,6 +50,7 @@ Beyond the world of film, I am deeply passionate about fitness and bodybuilding,
 
 <section id="like" class="section">
 <h2>Like</h2>
+<iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2FESPNMMA&width=450&layout&action&size&share=false&height=35&appId" width="450" height="35" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
 
 </section>
 
@@ -66,8 +67,46 @@ Beyond the world of film, I am deeply passionate about fitness and bodybuilding,
 </section>
 
 <section id="contact" class="section">
-<h2>Contact Me</h2>
+  <h2>Contact Me</h2>
+  <form class="contact-form">
+    <input type="text" name="Name" placeholder="Full name" required>
+    <input type="email" name="Email" placeholder="Email" required>
+    <textarea id="message" name="Message" rows="6" placeholder="Write your Message..." required></textarea>
+
+    <div class="emoji-list">
+      <span class="emoji" data-emoji="😊">😊</span>
+      <span class="emoji" data-emoji="🔥">🔥</span>
+      <span class="emoji" data-emoji="🎉">🎉</span>
+      <span class="emoji" data-emoji="😂">😂</span>
+      <span class="emoji" data-emoji="🌟">🌟</span>
+      <span class="emoji" data-emoji="❤️">❤️</span>
+    </div>
+
+
+    <button type="submit">Send Message</button>
+
+    
 </section>
+
+<script>
+  document.querySelectorAll('.emoji').forEach(function(emojiElement) {
+    emojiElement.addEventListener('click', function() {
+      const emoji = emojiElement.getAttribute('data-emoji');
+      const messageField = document.querySelector('#message');
+      messageField.value += emoji;
+    });
+  });
+
+  document.querySelector('.contact-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+  alert('Thank you! Your message was sent successfully.');
+
+  this.reset()
+
+    
+  });
+</script>
 
 
 <script type="text/javascript">
