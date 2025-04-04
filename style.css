@@ -1,7 +1,7 @@
 #menu {
 	position: fixed;
 	width: 100%;
-	background: #7f8c8d;
+	background: #525a5b;
 	top: 0;
 	padding: 15px 0;
 	z-index: 1000;
@@ -34,22 +34,32 @@
 }
 
 #menu a:hover {
-	background-color: #6d6a6a;
+	background-color: #525a5b;
 	color: white;
 }
 
 #menu a:active {
-	background-color: #6d6a6a;
+	background-color: #525a5b;
 }
 
 body {
-    background: linear-gradient(to right, #8e44ad, #3498db); /* Gradient */
     background-size: cover;
     background-attachment: fixed;
-    color: #7f8c8d;
+    color: #525a5b;
     font-family: 'Arial', sans-serif;
-    background-image: url('utils/rockybackground.webp'); /* Optional: subtle pattern */
+    background-image: url('utils/rockybackground.webp'); 
     background-repeat: repeat;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.8); /* White overlay with 30% opacity */
+    z-index: -1; /* Places the overlay behind the content */
 }
 
 
@@ -83,7 +93,7 @@ body {
 	font-size: 36px;
 	font-family: 'Arial', sans-serif;
 	margin-bottom: 20px;
-	color: #7f8c8d;
+	color: #525a5b;
 	font-weight: bold;
 	position: relative;
 }
@@ -95,7 +105,7 @@ body {
 	top: 50%;
 	width: 40%;
 	height: 2px;
-	background-color: #7f8c8d;
+	background-color: #525a5b;
 }
 
 .section h2::before {
@@ -110,7 +120,7 @@ body {
 	text-align: left;
 	font-size: 20px;
 	line-height: 1.6;
-	color: #7f8c8d;
+	color: #525a5b;
 }
 
 #about {
@@ -172,7 +182,7 @@ body {
   
 .contact-form button {
 	padding: 12px 20px;
-	background-color: #b5bec7;
+	background-color: #747171;
 	color: white;
 	font-size: 1rem;
 	border: none;
@@ -182,7 +192,7 @@ body {
   }
   
 .contact-form button:hover {
-	background-color: #005bb5;
+	background-color: #525a5b;
 	transform: translateY(-2px);
   }
 
@@ -200,7 +210,7 @@ body {
 	transition: transform 0.3s ease, background-color 0.3s ease;
 	padding: 10px;
 	border-radius: 8px;
-	background-color: #f0f0f0;
+	background-color: #747171;
   }
   
 .emoji:hover {
