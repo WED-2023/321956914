@@ -5,8 +5,10 @@ Website link: https://wed-2023.github.io/321956914/
 
 ## Project Overview
 This website is a personal tribute to Sylvester Stallone.  
+
 The website is designed with a responsive layout that allows visitors to explore his biography and photos, listen to his music playlist, like the website and scan QR code to enter the page. Additionally, there's a Q&A section that explains key differences between Web1, Web2, and Web3 technologies, and shows a specific usecase that helps to understand those differences.  
-The website includes a navigation bar that allows smooth movement between the site's different sections that are detailed below.
+ 
+The website also includes a navigation bar that allows smooth movement between the site's different sections that are detailed below.
 
 ### Website Sections
 - **About Me**: A short biography of Sylvester Stallone.
