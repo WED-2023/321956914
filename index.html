@@ -50,10 +50,35 @@ Beyond the world of film, I am deeply passionate about fitness and bodybuilding,
 
 
 <section id="like" class="section">
-<h2>Like</h2>
-<iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2FESPNMMA&width=450&layout&action&size&share=false&height=35&appId" width="450" height="35" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+  <h2>Like</h2>
+  <div class="likearea">
+    <div class="like-message">
+      <p>Enjoyed our website? Please give us a like! 👍</p>
+    </div>
+    <button id="likeButton">👍 Like</button>
+    <p>Likes: <span id="likeCount">0</span></p>
+  </div>
 
+  <div class="facebook-message">
+    <p>Like Sylvester Stallone's Facebook page right here:</p>
+  </div>
+  
+  <div class="facebook-like">
+    <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2FSylvesterStallone%2F&width=450&layout=standard&action=like&size=large&share=true&height=35&appId"
+      width="450" height="35" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+  </div>
 </section>
+
+<script>
+  let count = 0
+  const LikeButton = document.getElementById("likeButton");
+  const LikeCount = document.getElementById("likeCount");
+
+  LikeButton.addEventListener('click',function() {
+    count++;
+    LikeCount.textContent=count;
+  });
+</script>
 
 <section id="qrcoder" class="section">
   <h2>QR code</h2>
