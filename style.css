@@ -116,15 +116,20 @@ body::before {
 	right: 0;
 }
 
-.section p, .section img {
-	text-align: left;
-	font-size: 20px;
-	line-height: 1.6;
-	color: #525a5b;
+#about {
+    font-size: 26px;
+    text-align: center; 
+    margin: 0 auto; 
+    width: 80%; 
+	padding-top: 80px; 
+
 }
 
-#about {
-	font-size: 26px;
+.section p, .section img {
+    text-align: center; 
+    font-size: 20px;
+    line-height: 1.6;
+    color: #525a5b;
 }
 
 .qr-container {
