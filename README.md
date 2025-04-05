@@ -1,7 +1,7 @@
 # Sylvester Stallone Website
-Name : Rudik Kokoliev
-ID: 321956914
-Website link: https://wed-2023.github.io/321956914/
+Name : Rudik Kokoliev  
+ID: 321956914  
+Website link: https://wed-2023.github.io/321956914/  
 
 ## Project Overview
 This website is a personal tribute to Sylvester Stallone, showcasing key aspects of his career, personal interests, and creative works. From his iconic *Rocky* series to his love for fitness, art, and music, this website brings fans closer to the legendary actor through various interactive sections. 
