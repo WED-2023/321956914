@@ -198,9 +198,13 @@ Beyond the world of film, I am deeply passionate about fitness and bodybuilding,
   document.querySelector('.contact-form').addEventListener('submit', function(event) {
     event.preventDefault();
 
-  alert('Thank you! Your message was sent successfully.');
-
-  this.reset()
+    const name = document.querySelector('[name="Name"]').value;
+    const email = document.querySelector('[name="Email"]').value;
+    const message = document.querySelector('[name="Message"]').value;
+    
+    const mailtoLink = `mailto:kokoliev@post.bgu.ac.il?subject=Contact%20from%20${encodeURIComponent(name)}&body=Name: ${encodeURIComponent(name)}%0AEmail: ${encodeURIComponent(email)}%0AMessage: ${encodeURIComponent(message)}`;
+    
+    window.location.href = mailtoLink;
 
     
   });
